@@ -3,12 +3,14 @@ table {
     width: 100%;
     border-style: solid;
     border-color: blue;
-    background-color: blue;
+    background-color: aqua;
+    
 }
 th, td {
     border: 1px solid #ddd;
     padding: 8px;
     text-align: center;
+    font-size: large;
 }
 th {
     background-color: aqua;
@@ -27,6 +29,7 @@ button {
     height: 50px;
     border-radius: 20px;
     border-color: blue;
+    background-image: linear-gradient( blue, aqua);
  }
  fieldset{
     background-color: aqua;
@@ -37,4 +40,6 @@ button {
 h2{
     color: red;
 }
+
+
  
