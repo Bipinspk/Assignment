@@ -1,9 +1,5 @@
-*{
-    margin: 0%;
-    padding: 0%;
-    font-family: sans-serif;
-    box-sizing: border-box;
-}
+
+
 table {
     border-collapse: collapse;
     width: 100%;
@@ -21,42 +17,78 @@ th, td {
 th {
     background-color: aqua;
 }
-#myForm{
-   text-align: center;
-    font-size: larger;
-    font-weight: 200;
-}
+
 img{
     display: block;
     margin: auto;
     height: 50em;
-    width: 100em;
-}
-button {
-    width: 70px;
-    height: 70px;
-    border-radius: 20px;
-    border-color: blue;
-    background-color: aquamarine;
- }
- fieldset{
-    background-color: aqua;
-    border-radius: 25px;
- }
- h3{
-    color: red;
- }
-h2{
-    color: red;
-}
-input{
-    width: 40%;
-    height: 30px;
-}
-a{
-    font-size: larger;
+    width: 90em;
 }
 
+ 
+ h2{
+    color: red;
+    text-align: center;
+ }
+h1{
+    color: blue;
+    border-style: solid;
+border-radius: 10px;
+border-color: blue;
+}
+
+a{
+    font-size: 30px;
+}
+body {
+    font-family: Arial, sans-serif;
+    background-color: #f2f2f2;
+    margin: 0;
+    padding: 0;
+  }
+  .container {
+    max-width: 500px;
+    margin: 50px auto;
+    background-color: #fff;
+    padding: 20px;
+    border-radius: 10px;
+    box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+    background-image: linear-gradient(135deg, #dc05dc,#dcdcdc);
+  }
+  
+  h1 {
+    text-align: center;
+  }
+  .form-group {
+    margin-bottom: 20px;
+  }
+  label {
+    font-weight: bold;
+    font-size: larger;
+  }
+  input[type="text"],
+  input[type="email"],
+  input[type="date"],
+  input[type="tel"],
+  input[type="number"] {
+    width: 100%;
+    padding: 10px;
+    border: 1px solid #ccc;
+    border-radius: 5px;
+    box-sizing: border-box;
+  }
+  input[type="submit"] {
+    width: 100%;
+    padding: 10px;
+    border: none;
+    border-radius: 5px;
+    background-color: #007bff;
+    color: #fff;
+    cursor: pointer;
+  }
+  input[type="submit"]:hover {
+    background-color: #0056b3;
+  }
     
     
 
