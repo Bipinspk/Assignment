@@ -3,83 +3,89 @@
 <head>
 <meta charset="UTF-8">
 <meta name="viewport" content="width=device-width, initial-scale=1.0">
-<title>Form to Table</title>
-
-<img data-visualcompletion="media-vc-image" alt="No photo description available." class="x1bwycvy x193iq5w x4fas0m x19kjcj4" referrerpolicy="origin-when-cross-origin" src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/359832320_752190163576644_3254937616871204999_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=3635dc&amp;_nc_ohc=FVicJWWTmaYAX_gWmzo&amp;_nc_ht=scontent.fktm16-1.fna&amp;oh=00_AfBccmA2kSpHb1kfMypw41fjvFBIq3Qy3xrOfsS5J9p4hQ&amp;oe=65EB57C2">
-
+<title>Registration Form</title>
+  
+<img data-visualcompletion="media-vc-image" alt="No photo description available." class="x1bwycvy x193iq5w x4fas0m x19kjcj4" referrerpolicy="origin-when-cross-origin" src="https://scontent.fktm16-1.fna.fbcdn.net/v/t39.30808-6/347590403_742272577901736_7374066776684262358_n.jpg?_nc_cat=104&amp;ccb=1-7&amp;_nc_sid=5f2048&amp;_nc_ohc=AZ_DCnw7vnEAX8K9eDw&amp;_nc_ht=scontent.fktm16-1.fna&amp;oh=00_AfB0NWc6VrS98p2I4ydvL7pJx7CtT5OgxgdYMWl47R735A&amp;oe=65EC680A">
 <link rel="stylesheet" href="assigment.css">
 <script src="assigment.js"></script>
-</head><br><br>
+</head>
 <body>
-    <marquee> 
-        <h2>Please fill the below form!</h2>
-    </marquee><br><br><br><br>
+
+<div class="container">
     
-<form id="myForm">
-    <fieldset> 
-        <legend>
-            <h3>STUDENT REGISTRATION FORM</h3>
-        </legend><br><br>
-    <label for="name">Name:</label>
-    <input type="text" id="name" name="name" placeholder=" Enter Name" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
+  <h1>Registration Form</h1><br><br>
 
-    <label for="email">Email:</label>
-    <input type="email" id="email" name="email" placeholder="Enter Email" required><br><br>
+  <form action="#" method="post" id="myForm">
+    <div class="form-group">
+      <label for="name">Name:</label>
+      <input type="text" id="name" name="name" placeholder="Enter your name" required>
+    </div>
+    <div class="form-group">
+      <label for="email">Email:</label>
+      <input type="email" id="email" name="email" placeholder="Enter your email" required>
+    </div>
+    <div class="form-group">
+      <label for="age">Age:</label>
+      <input type="number" id="age" name="age" placeholder="Enter your age" required>
+    </div>
+    <div class="form-group">
+      <label for="dob">Date of Birth:</label>
+      <input type="date" id="dob" name="dob" required>
+    </div>
+    <div class="form-group">
+      <label for="phone">Phone Number:</label>
+      <select>
+        <option>+977</option>
+        <option>+1</option>
+        <option>+7</option>
+        <option>+61</option>
+        <option>+43</option>
+        <option>+91</option>
 
-    <label for="age">Age:</label>
-    <input type="number" id="age" name="age" placeholder="Enter Age" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-
-    <label for="date-of-birth">Date-of-Birth:</label>  
-            <input type="date" placeholder="date-of-birth" id="dob" name="dob" required><br><br>
-
-            <label for="ph-number"> Phone number:</label>
-            <select>
-                <option>+977</option>
-                <option>+1</option>
-                <option>+7</option>
-                <option>+61</option>
-                <option>+43</option>
-                <option>+91</option>
-
-            </select>
-            <input type="tel" placeholder="98......." pattern="[0-9]{10}" id="ph-number" name="ph-number" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-
-            <label for="gpa">Optained GPA in high school:</label>  
-            <input type="number" step="0.01" id="gpa" required placeholder="Enter GPA" name="gpa"></input><br><br>
-
-            <label for="province"> Select Province:</label>
-            <select name="province" id="province" name="province" required>
-                <option value=""></option>
-                <option value="koshi">Koshi</option>
-                <option value="madesh pradesh">Madesh Pradesh</option>
-                <option value="bagmati pradesh">Bagmati Pradesh</option>
-                <option value="gandaki pradesh">Gandaki Pradesh</option>
-                <option value="lumbini pradesh">Lumbini Pradesh</option>
-                <option value="karnali pradesh">karnali Pradesh</option>
-                <option value="sudur pashchim pradesh">Sudur Pashchim Pradesh</option>
-            </select>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-
-            <label for="city-name">City Name:</label> 
-            <input type="text" placeholder=" Enter City Name" id="city-name" name="city-name" required><br><br>
-
-            <label for="pre-school">Previous School Name:</label>
-            <input type="text" placeholder="Enter Previous school Name" id="pre-school" name="pre-school" required>&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;&nbsp;<br><br>
-
-            <label for="courses">Choose Courses:</label>
-            <select name="courses" id="courses" placeholder="Choose Courses" name="courses" required>
-            <option value=""></option>
-            <option value="bit">BIT</option>
-            <option value="bca">BCA</option>
-            <option value="bscit">BSCIT</option>
-            <option value="bba">BBA</option>
-            <option value="btech">BTECH</option>
-            <option value="bbs">BBS</option>
-            <option value="b.ed">B.ED</option>
-        </select><br><br>
-
-    <button type="button" onclick="submitForm()">Submit</button>
-</fieldset>
-</form><br><br><br>
+    </select>
+    <input type="tel" placeholder="98......." pattern="[0-9]{10}" id="ph-number" name="ph-number" required>
+    </div>
+    <div class="form-group">
+      <label for="gpa">Obtained GPA:</label>
+      <input type="number" step="0.01" id="gpa" required placeholder="Enter GPA" name="gpa">
+    </div>
+    <div class="form-group">
+      <label for="province">Province:</label>
+      <select name="province" id="province" name="province" required>
+        <option value=""></option>
+        <option value="koshi">Koshi</option>
+        <option value="madesh pradesh">Madesh Pradesh</option>
+        <option value="bagmati pradesh">Bagmati Pradesh</option>
+        <option value="gandaki pradesh">Gandaki Pradesh</option>
+        <option value="lumbini pradesh">Lumbini Pradesh</option>
+        <option value="karnali pradesh">karnali Pradesh</option>
+        <option value="sudur pashchim pradesh">Sudur Pashchim Pradesh</option>
+      </select>
+    </div>
+    <div class="form-group">
+      <label for="city">City Name:</label>
+      <input type="text" id="city-name" name="city" placeholder="Enter your city name" required>
+    </div>
+    <div class="form-group">
+      <label for="school">Previous School Name:</label>
+      <input type="text" id="pre-school" name="school" required>
+    </div>
+    <div class="form-group">
+      <label for="courses">Courses:</label>
+      <select name="courses" id="courses" placeholder="Choose Courses" name="courses" required>
+        <option value=""></option>
+        <option value="bit">BIT</option>
+        <option value="bca">BCA</option>
+        <option value="bscit">BSCIT</option>
+        <option value="bba">BBA</option>
+        <option value="btech">BTECH</option>
+        <option value="bbs">BBS</option>
+        <option value="b.ed">B.ED</option>
+    </select>
+    </div>
+    <input type="submit" value="Submit" onclick="submitForm()">
+  </form>
+</div><br><br><br>
 <h2>Your information will filled in the above table</h2><br><br>
 <table id="dataTable" border="2">
     <tr>
@@ -97,8 +103,12 @@
 </table><br><br><br>
 
 <h2>Location of our college</h2><br><br><br>
-   
+<center> 
 <iframe src="https://www.google.com/maps/embed?pb=!1m18!1m12!1m3!1d3533.1693338951522!2d84.39984217529977!3d27.6811607761975!2m3!1f0!2f0!3f0!3m2!1i1024!2i768!4f13.1!3m3!1m2!1s0x3994fb3031480e1f%3A0x9aeac75755dbb051!2sGlorious%20Academy%20Chitwan!5e0!3m2!1sen!2snp!4v1709628183950!5m2!1sen!2snp" width="600" height="450" style="border:0;" allowfullscreen="" loading="lazy" referrerpolicy="no-referrer-when-downgrade"></iframe><br><br><br><br><br>
+</center>
+<center> 
 <a href="https://www.facebook.com/gloriousacademychitwan/">Visit Us for More Information</a>
+</center>
+
 </body>
 </html>
