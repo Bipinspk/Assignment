@@ -38,3 +38,20 @@ function submitForm() {
 
     document.getElementById("myForm").reset();
 }
+document.getElementById("image").addEventListener("change", function() {
+    var file = this.files[0];
+    if (file) {
+      var reader = new FileReader();
+      reader.onload = function(event) {
+        document.getElementById("preview").src = event.target.result;
+        document.getElementById("preview").style.display = "block";
+      };
+      reader.readAsDataURL(file);
+    }
+  });
+  
+  document.getElementById("registrationForm").addEventListener("submit", function(event) {
+    event.preventDefault(); 
+    var formData = new FormData(this); 
+  });
+  
