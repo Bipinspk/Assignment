@@ -21,6 +21,47 @@ nav ul li a {
 nav ul li a:hover {
   background-color: #555;
 }
+.animated-sentence {
+  font-family: Arial, sans-serif;
+  font-size: 36px;
+  text-align: center;
+  color: red;
+}
+
+.word {
+  display: inline-block;
+  opacity: 0;
+  transform: translateY(50px);
+  animation: animateWord 0.5s ease forwards;
+}
+
+@keyframes animateWord {
+  0% {
+    opacity: 0;
+    transform: translateY(50px);
+  }
+  100% {
+    opacity: 1;
+    transform: translateY(0);
+  }
+}
+
+.word:nth-child(1) {
+  animation-delay: 0.5s;
+}
+
+.word:nth-child(2) {
+  animation-delay: 1s;
+}
+
+.word:nth-child(3) {
+  animation-delay: 1.5s;
+}
+
+.word:nth-child(4) {
+  animation-delay: 2s;
+}
+
 
 table {
     border-collapse: collapse;
