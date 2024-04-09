@@ -176,6 +176,8 @@ footer {
   padding: 5px;
   background-color: #abbaba;
   color: #000;
+  height: 50px;
+  font-size: larger;
 }
 
 
